@@ -1,0 +1,30 @@
+---
+title: "ELO-Model-Amber"
+author: "Amber Potter"
+date: "4/23/2021"
+output: pdf_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+## Import Data
+
+**GameLogs from 2000 to 2020**
+
+```{r data}
+gamelogs <- read.csv("data/gamelogs2000-2020.csv")
+```
+
+## Glimpse Data
+
+**GameLogs from 2000 to 2020**
+
+```{r data-glimpse}
+glimpse(gamelogs)
+```
+
